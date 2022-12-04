@@ -12,7 +12,7 @@ let moreThen= document.getElementById('reset');
 let playerText;
 let user=0;
 let computer=0;
-let computerIn = Math.floor((Math.random() * 4) + 1);
+let computerIn;
 
 stone.addEventListener('click', text_1);
 paper.addEventListener('click', text_2);
@@ -44,6 +44,7 @@ function text_4()
 
 function showResult()
 {
+    computerIn = Math.floor((Math.random() * 4) + 1);
     result.style.display = "block";
     content.style.display = "none";
 
